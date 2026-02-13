@@ -18,7 +18,7 @@ const ItemCard = ({ id, name, old_price, new_price, description, image, category
                 {!cartItems[id]
                     ? <div className='item-card-add' onClick={() => addToCart(id)}>
                         <p>ADD TO CART</p>
-                        <img className='add' src={assets.cart_icon} />
+                        {/* <img className='add' src={assets.cart_icon} /> */}
                     </div>
                     : <div className='item-card-cart-product'>
                         <div className='item-card-cart'>
