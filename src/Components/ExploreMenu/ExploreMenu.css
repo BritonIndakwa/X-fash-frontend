@@ -4,12 +4,12 @@
     gap: 1px;
     padding-top: 20px;
 }
-.explore-menu h1{
+/* .explore-menu h1{
     color: #262626;
     font-weight: 600;
     margin-bottom: 5px;
 
-}
+} */
 .explore-menu-text{
     max-width: 70%  ;
     columns: #808080;
@@ -54,6 +54,34 @@
     border: 4px solid tomato;
     padding: 2px;
     
+}
+
+.app-download-text{
+  font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 20px; */
+
+  /* Gradient animation setup */
+  background: linear-gradient(
+    270deg,
+    tomato,
+    #fabf8b,
+    #d2f109,
+    #f76e34,
+    #f97564,
+    #ffcc00,
+    #ff0000,
+    #fa0915
+  );
+  background-size: 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-text-slide 10s ease infinite;
 }
 .explore-menu-list-item .text-active{
     color: rgb(68, 3, 3);

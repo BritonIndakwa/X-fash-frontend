@@ -12,13 +12,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-.dot {
-  opacity: 0.3;
+.vot {
+  opacity: 0.9;
   animation: pulse 1.5s infinite ease-in-out;
-  color: green;
-  font-size: 24px;
+  color: rgb(254, 60, 26);
+  font-size: 54px;
+  
   transition: color 0.3s ease;
 }
 

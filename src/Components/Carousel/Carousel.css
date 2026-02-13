@@ -43,9 +43,20 @@
 .carousel-dot.active {
   background-color: white;
 }
-
+.carousel-loading-container{
+  justify-items: center;
+  align-items: center;
+  display: flex;
+   /* justify-items: center; */
+  justify-content: center;
+  padding-top: 40px;
+  margin-top: 40px;
+  /* background-color: red; */
+}
 .carousel-loading {
   text-align: center;
+  justify-items: center;
+  justify-content: center;
   padding: 40px;
   color: #555;
   font-size: 1.2rem;

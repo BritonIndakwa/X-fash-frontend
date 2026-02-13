@@ -11,12 +11,15 @@
 
 .item-card-image {
     width: 100%;
+    height: 300px;
     border-radius: 15px 15px 0px 0px;
 
 }
 
 .item-card-info {
-    padding: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px;
     gap: 1px;
     row-gap: 0px;
     margin-bottom: 1px;
@@ -24,7 +27,7 @@
 
 .item-card-name-rating {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin-bottom: 2px;
     gap: 2px;
@@ -37,13 +40,26 @@
 
 .item-card-price {
     display: flex;
-    gap: 40px;
+    gap: 0px;
     justify-content: space-evenly;
     margin-top: 2px;
     padding: auto;
     color: rgb(104, 19, 4);
     font-weight: 500;
 
+}
+
+.item-card-price-discount {
+    background-color: rgb(251, 251, 84);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+    /* padding-left: 4; */
+    height: fit-content;
+    padding: 2;
+    width: fit-content;
+    /* padding-right: 1; */
 }
 
 .item-card-container {
@@ -85,14 +101,17 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    color: rgb(1, 1, 1);
+    color: white;
     gap: 10px;
     padding: 6px;
     border-radius: 50px;
-    background-color: rgb(149, 253, 149);
+    background-color: rgb(14, 213, 60);
     width: 90px;
     height: 30px;
     border: 1px solid rgb(32, 26, 25);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
 
 }
 
@@ -107,10 +126,15 @@
     gap: 10px;
     padding: 12px;
     border-radius: 50px;
-    background-color: rgb(245, 190, 180);
+    background-color: #ff7f10;
     width: 80%;
     height: 30px;
     border: 1px solid rgb(32, 26, 25);
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+
 
 }
 
@@ -155,6 +179,17 @@
 
 }
 
+.item-card-description {
+    color: rgb(155, 150, 150);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
 @media (max-width:750px) {
     .item-card {
         width: 100%;
@@ -175,19 +210,21 @@
     }
 
     .item-card-info {
-        padding: 5px;
+        padding: 0px;
         gap: 1px;
         row-gap: 0px;
         margin-bottom: 1px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .item-card-name-rating {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         margin-bottom: 2px;
         gap: 2px;
-        margin-left: 6px;
+        margin-left: 2px;
         font-weight: 600;
 
 
@@ -244,14 +281,17 @@
         align-items: center;
         justify-content: center;
         font-weight: 400;
-        color: rgb(1, 1, 1);
+        color: white;
         gap: 10px;
         padding: 6px;
         border-radius: 50px;
-        background-color: rgb(149, 253, 149);
+        background-color: rgb(14, 213, 60);
         width: 90px;
         height: 30px;
         border: 1px solid rgb(32, 26, 25);
+           color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
 
     }
 
@@ -266,10 +306,13 @@
         gap: 10px;
         padding: 12px;
         border-radius: 50px;
-        background-color: rgb(245, 190, 180);
+        background-color: #ff7f10;
         width: 80%;
         height: 30px;
-        border: 1px solid rgb(32, 26, 25);
+        border: 1px solid rgb(248, 134, 13);
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
 
     }
 
@@ -299,7 +342,9 @@
         align-items: center;
         cursor: pointer;
 
+
     }
+
 
     .item-card-counter .remove-from-cart {
         width: 22px;

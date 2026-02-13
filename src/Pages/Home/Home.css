@@ -11,3 +11,6 @@ color: red;
     color: red;
     justify-content: flex-start;
 }
+.home-display{
+    padding-top: 20px;
+}

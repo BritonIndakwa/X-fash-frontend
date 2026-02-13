@@ -1,5 +1,10 @@
+.cart-page {
+    width: 100%;
+}
+
 .cart {
-    margin-top: 100px;
+    margin-top: 82px;
+    width: 100%;
     margin-bottom: -50px;
 }
 
@@ -12,11 +17,35 @@
 
 }
 
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #555; */
+}
+
 .title {
     color: rgb(20, 20, 27);
     margin: 10px 0px;
     font-weight: 500;
     font-size: 16px;
+
+}
+
+.cart-items-item {
+    background-color: #f1dddd;
+    padding-left: 4px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.image-title {
+    color: rgb(20, 20, 27);
+    margin: 10px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: start;
 
 }
 
@@ -27,9 +56,26 @@
 
 }
 
+.modification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 2px;
+    border: rgb(254, 133, 88) 2px solid;
+    padding: 0px 0px;
+    max-width: 90px;
+}
+
 .remove {
     width: 24px;
     cursor: pointer;
+    background-color: rgb(250, 118, 3);
+    height: 100%;
+    border-radius: 1px;
+    border: rgb(254, 133, 88) 2px solid;
+
 }
 
 .cart hr {
@@ -73,13 +119,13 @@
     border-radius: 8px;
     cursor: pointer;
     padding: 12px 0px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .cart-click-add {
     border: none;
     color: white;
-    background-color: rgb(220, 43, 4);
+    background-color: rgb(255, 116, 46);
     width: max(15vw, 200px);
     border-radius: 8px;
     cursor: pointer;
@@ -89,19 +135,24 @@
 
 .button-action {
     display: flex;
+    /* background-color: red; */
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
+    /* gap: 70px; */
+    padding: 10px;
 }
 
 .cart-promocode {
     flex: 1;
+    text-align: start;
 }
 
 .cart-promocode p {
     color: #555;
-    font-weight: 600;
+    text-align: start;
+    font-weight: 700;
     font-size: 16px;
+    padding-left: 6px;
 }
 
 .cart-promocode-input {
@@ -111,6 +162,7 @@
     align-items: center;
     background-color: #eaeaea;
     border-radius: 18px;
+    border: 2px orange solid;
 
 }
 
@@ -120,8 +172,9 @@
     outline: none;
     padding: 10px;
     margin-left: 10px;
-    font-weight: 6OO;
+    font-weight: 9OO;
     font-size: 16px;
+    text-transform: uppercase;
 
 }
 
@@ -133,6 +186,8 @@
     color: white;
     border-radius: 18px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 
 }
 
@@ -166,25 +221,27 @@
         border: none;
         color: white;
         width: 120px;
-        background-color: rgb(14, 213, 60);
+        background-color: rgb(6, 252, 63);
         /* width:max(12vw,150px) ; */
         border-radius: 8px;
         cursor: pointer;
         padding: 12px 0px;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
+
 
     .button-action {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1px;
+        padding: 8px;
+        /* gap: 1px; */
     }
 
     .cart-click-add {
         border: none;
         color: white;
-        background-color: rgb(220, 43, 4);
+        background-color: rgb(254, 153, 37);
         /* width:max(12vw,200px) ; */
         border-radius: 8px;
         width: 120px;
@@ -210,8 +267,8 @@
         border: none;
         outline: none;
         padding: 1px;
-        margin-left: 5px;
-        font-weight: 6OO;
+        margin-left: 15px;
+        font-weight: 9OO;
         font-size: 16px;
 
     }
@@ -220,17 +277,22 @@
         display: none;
     }
 
- .cart-items-item{
-    display: grid;
-    /* font-size:2px ; */
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2px;
-    align-items: center;
-    justify-content: space-between;
-    align-items: center;
- }
- .item{
-    width: 40px;
-    height: 50px;
- }
+    .cart-items-item {
+        display: grid;
+        /* font-size:2px ; */
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 2px;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .details {
+        text-align: start;
+    }
+
+    .item {
+        width: 40px;
+        height: 50px;
+    }
 }

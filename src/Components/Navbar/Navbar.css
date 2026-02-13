@@ -8,7 +8,7 @@
     top: 0;
     transition: top 0.3s;
     z-index: 999;
-    background-color: rgb(251, 56, 56);
+    background-color: rgb(254, 45, 45);
     padding-bottom: 20px;
     max-height: 80px;
     gap: 50px;
@@ -42,7 +42,7 @@
     display: flex;
     color: white;
     font-size: 18px;
-    width: 550px;
+    width: 460px;
 
 }
 
@@ -66,9 +66,11 @@
     width: 190px;
     height: fit-content;
     position: flex-start;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     overflow: hidden;
+    border-bottom-left-radius: 15px;
     padding-bottom: 2px;
+    max-height: 80px;
 
 
 
@@ -103,7 +105,7 @@
 }
 
 .navbar button:hover {
-    background-color: #f72b08;
+    background-color: #f77808;
 
 }
 
@@ -126,7 +128,7 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: white;
+    background-color: rgb(250, 21, 5);
     border-radius: 25px;
     top: -8px;
     right: -8px;
@@ -194,6 +196,7 @@
     .navbar-menu {
         gap: 20px;
         font-size: 17px;
+        width: 360px;
     }
 
     .navbar-right {
@@ -212,7 +215,7 @@
 
 @media (max-width:900px) {
     .navbar {
-        padding: 10px 5px;
+        padding: 10px 1px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -221,7 +224,7 @@
         top: 0;
         transition: top 0.3s;
         z-index: 999;
-        background-color: rgb(251, 56, 56);
+        /* background-color: rgb(251, 56, 56); */
         padding-bottom: 5px;
         max-height: 50px;
         gap: 1px;
@@ -234,6 +237,7 @@
     .navbar .nav-logo {
         width: 120px;
         height: fit-content;
+        max-height: 50px;
     }
 
     .navbar-menu {
@@ -254,6 +258,31 @@
         padding: 7px 20px;
         font-size: 15px;
     }
+
+    .navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff2ef;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+}
 }
 
 @media (max-width:750px) {
@@ -289,6 +318,40 @@
         height: 35px;
         cursor: pointer;
 
+    }
+      .navbar-right button {
+        padding: 7px 8x;
+        font-size: 16px;
+    }
+
+}
+@media (max-width:550px) {
+        .navbar-right button {
+        padding: 7px 8px;
+        font-size: 16px;
+    }
+     .navbar-right {
+        gap: 15px;
+    }
+
+}
+@media (max-width:350px) {
+        .navbar-right button {
+        padding: 7px 8px;
+        font-size: 14px;
+    }
+     .navbar-right {
+        gap: 5px;
+    }
+
+}
+@media (max-width:350px) {
+        .navbar-right button {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+     .navbar-right {
+        gap: 5px;
     }
 
 }
