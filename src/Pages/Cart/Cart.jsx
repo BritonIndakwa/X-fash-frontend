@@ -21,11 +21,12 @@ export const Cart = () => {
       <Navbar setShowLogin={setShowLogin} />
 
       <div className='cart'>
-        <div className="cart-items">
+            <div className="cart-items">
           <h2>My Cart Items</h2>
+
           <div className="cart-items-title">
-            <p className='title'>Items</p>
-            <p className='title'>Title</p>
+            <p className='image-title'>Items</p>
+            <p className='image-title'>Title</p>
             <p className='title'>Price</p>
             <p className='title'>Quantity</p>
             <p className='title'>Total</p>
@@ -36,14 +37,18 @@ export const Cart = () => {
           {all_product.map((item, index) => {
             if (cartItems[item._id] > 0) {
               return (
-                <div>
+                <div className='cart-items-list'>
                   <div className='cart-items-title cart-items-item'>
                     <img src={item.image} alt="" className='item' />
-                    <p className='title-details'>{item.name}</p>
+                    <p className='image-title'>{item.name}</p>
                     <p className='details'><Price amountInKES={item.new_price} /></p>
                     <p className='details'>{cartItems[item._id]}</p>
                     <p className='details'><Price amountInKES={item.new_price * cartItems[item._id]} /></p>
-                    <img onClick={() => removeFromCart(item._id)} src={assets.trash} alt="remove" className='remove' />
+                    <div className='details modification'>
+                      <img className='remove' onClick={()=> addToCart(item._id) } src={assets.add} alt="add" />
+                      <p >{cartItems[item._id]}</p>
+                      <img  onClick={() => removeFromCart(item._id)} src={assets.trash} alt="remove" className='remove' />
+                    </div>
                   </div>
                   <hr />
                 </div>
