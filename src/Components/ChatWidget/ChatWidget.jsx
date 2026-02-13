@@ -96,7 +96,7 @@ const ChatWidget = () => {
         <div className="chat-widget">
           <div className="chat-widget-header">
             <h2>X-Fash Shop Assistant</h2>
-            <button onClick={toggleChat} className="close-btn">❌</button>
+            <button onClick={toggleChat} className="close-btn">X</button>
           </div>
 
           <div className="chat-body" ref={chatBodyRef}>

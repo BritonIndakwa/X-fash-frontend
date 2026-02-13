@@ -224,7 +224,7 @@
 
 /* Selected/active category style */
 .category-item.selected {
-    background-color: rgb(254, 177, 35);
+    background-color: rgb(254, 68, 35);
     color: black;
     border-color: #ff7300;
 }

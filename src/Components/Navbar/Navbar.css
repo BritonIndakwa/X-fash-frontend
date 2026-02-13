@@ -105,7 +105,8 @@
 }
 
 .navbar button:hover {
-    background-color: #f77808;
+    background-color: #fdfcfb;
+    color: red;
 
 }
 
