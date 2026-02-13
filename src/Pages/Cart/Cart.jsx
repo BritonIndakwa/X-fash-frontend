@@ -15,7 +15,7 @@ export const Cart = () => {
 
   const navigate = useNavigate();
 
-  const { cartItems, removeFromCart, getTotalCartAmount, url, all_product } = useContext(StoreContext)
+  const { cartItems,addToCart, removeFromCart, getTotalCartAmount, url, all_product } = useContext(StoreContext)
   return (
     <div>
       <Navbar setShowLogin={setShowLogin} />
